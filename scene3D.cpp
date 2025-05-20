@@ -214,25 +214,7 @@ void Scene3D::initializeGL() // initialization
 
 }
 
-void Scene3D::drawAxis() // build coordinate axes
-{
-    glLineWidth(2.0f); // set line width approximately in pixels
-    // before calling this command width is equal to 1 pixel by default
 
-    glColor4f(1.00f, 0.00f, 0.00f,
-        1.0f); // sets color for subsequent primitives 
-    // x axis
-    glBegin(GL_LINES); // line construction
-    glVertex3f(x_a, 0.0f, 0.0f); // first point
-    glVertex3f(x_b, 0.0f, 0.0f); // second point
-    // y axis
-    glVertex3f(0.0f, y_a, 0.0f);
-    glVertex3f(0.0f, y_b, 0.0f);
-    // z axis
-    glVertex3f(0.0f, 0.0f, 10.0f);
-    glVertex3f(0.0f, 0.0f, -10.0f);
-    glEnd();
-}
 
 void Scene3D::drawFigure() // build the figure
 {
