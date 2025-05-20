@@ -29,7 +29,6 @@ protected:
     void initializeGL(); // метод для проведения инициализаций, связанных с OpenGL
     void resizeGL(int nWidth=1000, int nHeight=800); // метод вызывается при изменении размеров окна виджета
     void paintGL(); // метод, чтобы заново перерисовать содержимое виджета
-    void drawAxis(); // построить оси координат
     void drawFigure(); // построить фигуру
     void draw_f();
 
