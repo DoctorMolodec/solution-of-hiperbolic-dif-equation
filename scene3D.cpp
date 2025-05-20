@@ -374,6 +374,7 @@ void Scene3D::drawFigure() // build the figure
     painter.drawText(0, 40, function_name);
     painter.drawText(100, 40, function_name1);
     painter.drawText(200, 40, function_name2);
+    painter.drawText(330, 40, "u_t=nu*u_xx+u*u_x");
     painter.drawText(0, 60, "n_x = " + QString::number(n_x));
     painter.drawText(100, 60, "n_t = " + QString::number(n_y));
     painter.drawText(0, 80, "nu = " + QString::number(nu));
